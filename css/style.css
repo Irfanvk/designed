@@ -1,0 +1,263 @@
+
+ .irfan{
+    
+    border-bottom:#444 1px solid;
+    min-height:100px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    background-color:transparent;
+}
+.navshrink{
+    background-color:#fff;
+    border-bottom:#444 1px solid;
+    min-height: 60px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    
+}
+.logo{
+    margin-left: 83px;
+    height:28px;
+     width:104px;   
+     float: left;
+     margin-top: 6px;
+     margin-bottom:6px;
+}
+#navji{
+    margin-left: 500px;
+    margin-bottom: -20px;
+}
+#navji ul li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top:10px;
+    list-style: none;
+    
+}
+.current a{
+    border-bottom:#000 1.5px solid;
+    
+}
+#navji ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #444;
+}
+
+#navji ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+#navji ul li a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.showcase{
+    background:url('../img1/story-head.jpg');
+    position: relative;
+    background-size:cover;
+    min-height: 600px;  
+    overflow: hidden;
+    margin-left: -148px;  
+  
+  }
+#hero{
+    min-height: inherit;
+    background-color: rgba(0,0,0,0.4);  
+  }
+  
+#now{
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+#where{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#now h1{
+    font-size: 65px;
+    color: black; 
+    padding-bottom: 50px;
+    
+} 
+#now p{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: justify;
+    color: grey;
+    
+}
+
+.fancyfont{
+    font-family: 'Pacifico', cursive;
+}
+
+.img2{
+    background-image: url(../img1/story-01.jpg);
+    background-position: center;
+   
+    height: 100%;
+    background-size: cover;
+}
+#sec3{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+#sec3 h1{
+    display: block;
+    color: white;
+    font-size: 10em;
+    margin-top: 380px;
+}
+body{
+    overflow-x: hidden;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img1/story-bg-05.jpg");
+
+    /* Set a specific height */
+    height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center
+}
+.parallax div{
+    background: rgba(0,0,0,0.8) !important;
+    z-index:5;
+    height: inherit;
+    opacity: 0.5;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 1em !important;
+    text-align: center;
+    padding-top: 300px;
+}
+.parallax div h1{
+    font-size: 4em;
+    letter-spacing: 0px;
+    color: white;   
+}
+
+
+#blocks {
+   
+    align-content: center;
+    text-align: center;
+}
+#blocks img{
+    padding: 70px;
+}
+#blk2:hover{
+    background-color: black;
+}
+#blk3:hover{
+    background-color: black;
+}
+#blk4:hover{
+    background-color: black;
+}
+#blk1:hover{
+    background-color: darkgray;
+}
+
+#prpr{
+    color: black;
+    height: 800px;
+    background-color: white;
+    
+}
+.img3{
+    background-image: url(../img1/story-bg-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background-image: url(../img1/story-bg-03.jpg);
+    background-position: center;
+    height: 160px;
+    background-repeat: no-repeat;
+    width: 170px;
+}
+.img5{
+    background-image: url(../img1/story-bg-04.jpg);
+    background-position: center;
+    height: 160px;
+    width: 170px;
+    background-repeat: no-repeat;
+}
+#modal{
+    padding-top: 20px;
+}
+#modal div{
+    padding-left: 30px;;    
+}
+#modal h1,h3{
+    color: black;
+    padding-bottom: 20px;
+}
+/*-------Media Query-------*/
+@media (max-width: 568px){
+    #sec3 h1{
+        font-size: 4em;
+        text-align: center;
+    }
+    #navji{
+        margin-bottom: -210px;
+    }
+    .parallax div{
+        letter-spacing: 5px;
+        font-size: 10px;
+        text-align: center;
+        padding-top: 300px;
+    }
+    .parallax div h1{
+        font-size: 2em;
+        letter-spacing: 0px;
+        color: white;   
+    }
+    #prpr{
+        color: black;
+        height: auto;
+        background-color: white;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    nav #hide{
+        display: none;
+    }
+    .navbarNav{
+        display: none;
+    }
+    .navbarNav a{
+        display: none;
+    }
+}
